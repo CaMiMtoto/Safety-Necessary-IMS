@@ -4,11 +4,12 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8 col-lg-5">
-                <div class="d-flex justify-content-center">
-                    <img src="{{ asset('assets/media/logos/logo.png') }}" class="img-fluid mb-5 tw-h-16" alt="Logo"/>
-                </div>
+
                 <div class="card bg-secondary-subtle border border-secondary">
                     <div class="card-body">
+                        <div class="d-flex">
+                            <img src="{{ asset('assets/media/logos/logo.png') }}" class="img-fluid mb-5 tw-h-16" alt="Logo"/>
+                        </div>
                         <h4 class="tw-text-3xl fw-light">{{ __('Login') }}</h4>
                         <p>
                             {{ __('Please enter your email and password to login') }}

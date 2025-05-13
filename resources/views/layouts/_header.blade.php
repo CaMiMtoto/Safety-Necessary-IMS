@@ -46,7 +46,7 @@
             <div class="app-navbar-item d-none d-lg-flex align-items-stretch flex-lg-grow-1 me-2 me-lg-0">
                 <div>
                     <h2 class="fw-bolder">
-                        GEA
+                        {{ config('app.name') }}
                     </h2>
                     <p>
                         Inventory Management System
