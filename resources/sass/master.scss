@@ -1,0 +1,35 @@
+@import "variables";
+@import "pikaday";
+// Variables
+$body-bg: #ffffff;
+
+// Typography
+//$font-family-sans-serif: "Inter", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+* {
+    //font-family: "Inter", sans-serif !important;
+}
+
+@import "sweetalert2/src/sweetalert2";
+@import "flatpickr/dist/flatpickr.min.css";
+// Bootstrap
+@import "style";
+// DataTables
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import "datatables.net-bs5/css/dataTables.bootstrap5.min.css";
+@import "datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css";
+@import "pikaday/scss/pikaday";
+@import "selectsize";
+@import "@selectize/selectize/dist/scss/selectize";
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-fullscreen .modal-content {
+    min-height: 100% !important;
+    height: auto !important;
+}

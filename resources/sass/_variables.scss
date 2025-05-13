@@ -1,0 +1,172 @@
+// Body
+//$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'figtree', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+//$blue: #30682E;
+$blue: #053139;
+$blue-300: #cde3f8;
+$cyan: #25c0d9;
+$info: $cyan;
+$green: #50cd89;
+$red: #f5394b;
+$yellow: #EFBC73;
+$input-border-radius: 0.5rem;
+$btn-border-radius: 0.25rem;
+$form-check-input-border-radius: $input-border-radius;
+//$input-border-radius-sm:                var(--#{$prefix}border-radius-sm);
+//$input-border-radius-lg:                var(--#{$prefix}border-radius-lg);
+$black: #000000 !default;
+$input-focus-box-shadow: none;
+$enable-shadows: true;
+$enable-rounded: true;
+$enable-smooth-scroll: true;
+$enable-caret: false;
+
+$btn-border-radius: $input-border-radius;
+$btn-border-radius-sm: $input-border-radius;
+$btn-border-radius-lg: $input-border-radius;
+
+$spacer: 1rem;
+
+$spacers: (
+    0: 0,
+    1: ($spacer * .25), // 3.5px
+    2: ($spacer * .5), // 7px;
+    3: ($spacer * .75), // 10.5px
+    4: ($spacer * 1), // 14px
+    5: ($spacer * 1.25), // 17.5px
+    6: ($spacer * 1.5), // 21px
+    7: ($spacer * 1.75), // 24.5px
+    8: ($spacer * 2), // 28px
+    9: ($spacer * 2.25), // 31.5px
+    10: ($spacer * 2.5), // 35px
+    11: ($spacer * 2.75), // 38.5px
+    12: ($spacer * 3), // 42px
+    13: ($spacer * 3.25), // 45.5px
+    14: ($spacer * 3.5), // 49px
+    15: ($spacer * 3.75), // 52.5px
+    16: ($spacer * 4), // 55px
+    17: ($spacer * 4.25), // 58.5px
+    18: ($spacer * 4.5), // 62px
+    19: ($spacer * 4.75), // 65.5px
+    20: ($spacer * 5), // 69px
+);
+
+$modal-content-border-radius: $input-border-radius;
+$alert-border-radius: $input-border-radius;
+
+$variable-prefix: bs- !default; // Deprecated in v5.2.0 for the shorter `$prefix`
+$prefix: $variable-prefix !default;
+
+// Base
+html.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown),
+body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown):not(.modal-open) {
+    overflow-y: initial !important;
+
+    &:not(.sweetalert2-nopadding) {
+        padding-right: 0 !important;
+    }
+}
+
+// Popup
+.swal2-popup {
+    background-color: var(--#{$prefix}body-bg);
+    padding: 2rem;
+
+    .swal2-title {
+        font-weight: 500;
+        font-size: 1.3rem;
+        color: var(--#{$prefix}dark);
+    }
+
+    .swal2-html-container,
+    .swal2-content {
+        font-weight: normal;
+        font-size: 1.1rem;
+        margin-top: 1.5rem;
+        color: var(--#{$prefix}gray-800);
+    }
+
+    .btn {
+        margin: 15px 5px 0;
+    }
+
+    .swal2-styled {
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .swal2-actions {
+        margin: 1.5rem auto 1rem auto;
+    }
+}
+
+// Container
+.swal2-container {
+    overflow-y: hidden !important;
+
+    &.swal2-shown {
+        background-color: rgba($black, 0.2);
+    }
+
+    // Content
+    .swal2-html-container {
+        max-height: 200px;
+        overflow: auto;
+    }
+}
+
+body.swal2-height-auto {
+    height: 100% !important;
+}
+
+// State Colors
+.swal2-icon {
+    // Warning
+    &.swal2-warning {
+        border-color: var(--#{$prefix}warning);
+        color: var(--#{$prefix}warning);
+    }
+
+    // Error
+    &.swal2-error {
+        border-color: var(--#{$prefix}danger);
+        color: var(--#{$prefix}danger);
+
+        [class^=swal2-x-mark-line] {
+            background-color: rgba(var(--#{$prefix}danger-rgb), 0.75);
+        }
+    }
+
+    // Success
+    &.swal2-success {
+        border-color: var(--#{$prefix}success);
+        color: var(--#{$prefix}success);
+
+        [class^=swal2-success-line] {
+            background-color: var(--#{$prefix}success);
+        }
+
+        .swal2-success-ring {
+            border-color: rgba(var(--#{$prefix}success-rgb), 0.3);
+        }
+    }
+
+    // Info
+    &.swal2-info {
+        border-color: var(--#{$prefix}info);
+        color: var(--#{$prefix}info);
+    }
+
+    // Question
+    &.swal2-question {
+        border-color: var(--#{$prefix}primary);
+        color: var(--#{$prefix}primary);
+    }
+}
+
+@import "swal";

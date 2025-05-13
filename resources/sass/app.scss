@@ -1,0 +1,113 @@
+@import 'variables';
+@import "bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import "sweetalert2/src/sweetalert2";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+//@import "datatables.net-bs5/css/dataTables.bootstrap5.min.css";
+@import "dt";
+
+@media screen and (max-width: 600px) {
+    .select2-container {
+        width: 100%;
+    }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Jost", sans-serif !important;
+}
+
+.form-control, .form-select {
+    background-color: white !important;
+}
+
+#hero .animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@media (max-width: 991px) {
+    #hero {
+        height: 100vh;
+        text-align: center;
+    }
+
+    #hero .animated {
+        animation: none;
+    }
+
+    #hero .hero-img {
+        text-align: center;
+    }
+
+    #hero .hero-img img {
+        width: 50%;
+    }
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.icon-box {
+    padding: 30px;
+    border-radius: 6px;
+    background: #fff;
+    transition: ease-in-out 0.3s;
+}
+
+.icon-box i {
+    float: left;
+    color: #3498db;
+    font-size: 40px;
+    line-height: 0;
+}
+
+.select2-container--bootstrap-5 .select2-dropdown .select2-search .select2-search__field:focus, .select2-container--bootstrap-5.select2-container--focus .select2-selection, .select2-container--bootstrap-5.select2-container--open .select2-selection {
+    border-color: $blue !important;
+    box-shadow: 0 0 0 0.25rem rgba(131, 67, 11, 0.29) !important;
+}
+
+.select2-container--bootstrap-5 .select2-dropdown .select2-results__options .select2-results__option.select2-results__option--selected, .select2-container--bootstrap-5 .select2-dropdown .select2-results__options .select2-results__option[aria-selected=true]:not(.select2-results__option--highlighted) {
+    color: #fff;
+    background-color: $blue !important;
+}
+
+.select2-container--bootstrap-5 .select2-selection {
+    border-radius: $input-border-radius !important;
+}
+
+
+
+/* Style the container that holds the content with the scrollbar */
+/*.table-responsive {
+    width: 100%; !* Set the width of the container *!
+    overflow-x: auto; !* Enable horizontal scrolling *!
+    white-space: nowrap; !* Prevent text from wrapping to the next line *!
+}*/
+
+/* Style the scrollbar itself */
+.table-responsive::-webkit-scrollbar {
+    height: 6px; /* Set the height of the scrollbar */
+}
+
+/* Style the scrollbar track (the background of the scrollbar) */
+.table-responsive::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Set the background color of the track */
+}
+
+/* Style the scrollbar thumb (the draggable part of the scrollbar) */
+.table-responsive::-webkit-scrollbar-thumb {
+    background-color: #888; /* Set the color of the thumb */
+    border-radius: 0px; /* Add rounded corners to the thumb */
+}
+
+/* Style the scrollbar when the user hovers over it */
+.table-responsive::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Change the color on hover */
+}

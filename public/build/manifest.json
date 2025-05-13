@@ -1,0 +1,52 @@
+{
+  "_sweetalert2-D3W32nIB.js": {
+    "file": "assets/sweetalert2-D3W32nIB.js",
+    "name": "sweetalert2"
+  },
+  "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff": {
+    "file": "assets/bootstrap-icons-BOrJxbIo.woff",
+    "src": "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff"
+  },
+  "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2": {
+    "file": "assets/bootstrap-icons-BtvjY1KL.woff2",
+    "src": "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-KnZ8CJ2T.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-pjcxt-_6.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "imports": [
+      "_sweetalert2-D3W32nIB.js"
+    ]
+  },
+  "resources/js/master.js": {
+    "file": "assets/master-C6X16pdC.js",
+    "name": "master",
+    "src": "resources/js/master.js",
+    "isEntry": true,
+    "imports": [
+      "_sweetalert2-D3W32nIB.js"
+    ]
+  },
+  "resources/sass/app.scss": {
+    "file": "assets/app-Dhh2cRWg.css",
+    "src": "resources/sass/app.scss",
+    "isEntry": true
+  },
+  "resources/sass/master.scss": {
+    "file": "assets/master-PFKyYTD2.css",
+    "src": "resources/sass/master.scss",
+    "isEntry": true
+  },
+  "resources/sass/pdf.scss": {
+    "file": "assets/pdf-CxTNck8w.css",
+    "src": "resources/sass/pdf.scss",
+    "isEntry": true
+  }
+}

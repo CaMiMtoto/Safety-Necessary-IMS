@@ -1,0 +1,145 @@
+@import "variables";
+@import "bootstrap/scss/bootstrap";
+
+* {
+    font-family: 'figtree', sans-serif !important;
+}
+
+.font-croissant {
+    font-family: 'CroissantOne', serif !important;
+}
+
+
+.logo {
+    height: 170px;
+}
+
+.bg-primary {
+    background-color: $blue !important;
+}
+
+.text-primary {
+    color: $blue !important;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table th {
+    padding: 5px;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+// generate tracking utilities
+$trackings: (
+    tight: -0.05em,
+    normal: 0,
+    wide: 0.05em,
+    wider: 0.1em,
+    widest: 0.25em,
+);
+@each $modifier, $value in $trackings {
+    .tracking-#{$modifier} {
+        letter-spacing: $value !important;
+    }
+}
+
+// generate margin and padding utilities
+$spacers: (
+    0: 0,
+    1: 0.25rem,
+    2: 0.5rem,
+    3: 1rem,
+    4: 1.5rem,
+    5: 3rem,
+    6: 4rem,
+    7: 5rem,
+    8: 6rem,
+    9: 7rem,
+    10: 8rem,
+    auto: auto,
+);
+@each $modifier, $value in $spacers {
+    .m-#{$modifier} {
+        margin: $value !important;
+    }
+    .mt-#{$modifier} {
+        margin-top: $value !important;
+    }
+    .mr-#{$modifier} {
+        margin-right: $value !important;
+    }
+    .mb-#{$modifier} {
+        margin-bottom: $value !important;
+    }
+    .ml-#{$modifier} {
+        margin-left: $value !important;
+    }
+    .mx-#{$modifier} {
+        margin-right: $value !important;
+        margin-left: $value !important;
+    }
+    .my-#{$modifier} {
+        margin-top: $value !important;
+        margin-bottom: $value !important;
+    }
+    .p-#{$modifier} {
+        padding: $value !important;
+    }
+    .pt-#{$modifier} {
+        padding-top: $value !important;
+    }
+    .pr-#{$modifier} {
+        padding-right: $value !important;
+    }
+    .pb-#{$modifier} {
+        padding-bottom: $value !important;
+    }
+    .pl-#{$modifier} {
+        padding-left: $value !important;
+    }
+    .px-#{$modifier} {
+        padding-right: $value !important;
+        padding-left: $value !important;
+    }
+    .py-#{$modifier} {
+        padding-top: $value !important;
+        padding-bottom: $value !important;
+    }
+}
+
+// generate  bg color utilities
+$colors: (
+    primary: $blue,
+    secondary: $gray-600,
+    success: $green,
+    info: $cyan,
+    warning: $yellow,
+    danger: $red,
+    light: $gray-100,
+    dark: $gray-800,
+    white: $white,
+);
+@each $modifier, $value in $colors {
+    .bg-#{$modifier} {
+        background-color: unquote("" + $value) !important;
+    }
+}
+
+.footer {
+    //background-color: $blue;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    border: 0;
+}
+
